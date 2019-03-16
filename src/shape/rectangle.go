@@ -9,13 +9,19 @@ type rectangle struct {
 	height float64
 }
 
+func (rec rectangle) area() float64 {
+	return rec.width * rec.height
+}
+
 func (rec rectangle) perimeter() float64 {
 	return (rec.width + rec.height) * 2
 }
+
 func main() {
 	rec := rectangle{
 		width:  3,
 		height: 4,
 	}
 	fmt.Println("the perimeter of the rectangle is:", rec.perimeter())
+	fmt.Println("the area of the rectangle is", rec.area())
 }
