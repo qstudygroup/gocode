@@ -22,6 +22,7 @@ func main() {
 		width:  3,
 		height: 4,
 	}
+
 	fmt.Println("the perimeter of the rectangle is:", rec.perimeter())
 	fmt.Println("the area of the rectangle is", rec.area())
 }
