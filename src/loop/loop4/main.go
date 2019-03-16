@@ -9,11 +9,14 @@ func main() {
 		if x > 100 {
 			break
 		}
+
 		if x%2 != 0 {
 			continue
 		}
+
 		fmt.Println(x)
 		x++
 	}
+
 	fmt.Println("done")
 }
