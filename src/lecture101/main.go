@@ -8,7 +8,6 @@ func main(){
 	bar("James")
 	s1 := woo("MonneyPenny")
 	fmt.Println(s1)
-	mouse()
 }		
 	func foo(){
 		fmt.Println("hello from foo")
