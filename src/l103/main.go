@@ -3,20 +3,21 @@
 
 package main
 
+import "fmt"
 
-func main(){
-	x := sum("james",1,2,3,4)
+func main() {
+	x := sum("james", 1, 2, 3, 4)
 	fmt.Println("the total is", x)
 }
 
 func sum(s string, x ...int) int {
 	fmt.Println(x)
-	fmt.Printf("%T\n",x)
+	fmt.Printf("%T\n", x)
 	fmt.Println(len(x))
 	fmt.Println(cap(x))
 	sum := 0
 
-	for i,v := range x{
+	for i, v := range x {
 		sum += v
 		fmt.Println("at position", i, "we add", v, "to the total which is now", sum)
 	}
