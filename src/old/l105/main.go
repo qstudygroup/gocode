@@ -1,36 +1,36 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
-type person struct{
+type person struct {
 	first string
-	last string
+	last  string
 }
 
-type secretAgent struct{
+type secretAgent struct {
 	person
 	ltk bool
 }
 
-func (s secretAgent) speak(){
+func (s secretAgent) speak() {
 	fmt.Println("I am", s.first, s.last)
 }
 
-func main(){
-	sa1:=secretAgent{
-		person : person{
+func main() {
+	sa1 := secretAgent{
+		person: person{
 			first: "James",
-			last: "Bond",
+			last:  "Bond",
 		},
 		ltk: true,
 	}
 
-	sa2:=secretAgent{
-		person : person{
+	sa2 := secretAgent{
+		person: person{
 			first: "Perry",
-			last: "the Platypus",
+			last:  "the Platypus",
 		},
 		ltk: true,
 	}
