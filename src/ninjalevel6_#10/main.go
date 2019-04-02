@@ -10,12 +10,16 @@ import (
 func main() {
 	v := 5
 	fmt.Println(v)
-	enclose()
+	f := enclose()
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
 }
 
-func enclose() {
+func enclose() func() int {
 	v := 8
-	fmt.Println(v)
-	v++
-	fmt.Println(v)
+	return func() int {
+		v++
+		return v
+	}
 }
