@@ -10,5 +10,22 @@
     Start: 8:50
     Stop: 10:40
 2019-04-01
-    Start: 
-    Stop:
+    Start: 3:50
+    Stop: 4:20
+    Start: 6:30
+    Stop: 6:55
+    Start 8:15
+    Stop 8:20
+2019-04-02
+    Start: 5:00
+    stop: 5:30
+2019-04-03
+    Start 4:37
+    Stop 5:10
+    Start 7:40
+    Stop 8:00
+2019-04-04
+    Start: 7:05
+    Stop: 7:50
+
+    
