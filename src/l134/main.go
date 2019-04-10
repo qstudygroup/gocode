@@ -14,11 +14,15 @@ type person struct {
 }
 
 type byAge []person
+type byName []person
 
 func (a byAge) Len() int           { return len(a) }
 func (a byAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a byAge) Less(i, j int) bool { return a[i].Age < a[j].Age }
 
+func (n byName) Len() int           { return len(n) }
+func (n byName) Swap(i, j int)      { n[i], n[j] = n[j], n[i] }
+func (n byName) Less(i, j int) bool { return n[i].First < n[j].First }
 func main() {
 	p1 := person{"James", 32}
 	p2 := person{"Moneypenny", 27}
@@ -30,5 +34,6 @@ func main() {
 	fmt.Println(people)
 	sort.Sort(byAge(people))
 	fmt.Println(people)
-
+	sort.Sort(byName(people))
+	fmt.Println(people)
 }
