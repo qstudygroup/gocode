@@ -27,7 +27,7 @@ func main() {
 		fmt.Println("error:", err)
 	}
 	for i, v := range people {
-		fmt.Println("person number", i)
+		fmt.Println("\nperson number", i)
 		fmt.Println(v.First, v.Last, v.Age)
 	}
 }

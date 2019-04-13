@@ -9,7 +9,6 @@ import (
 	"os"
 )
 
-//JSON Marshal
 type ColorGroup struct {
 	ID     int
 	Name   string
