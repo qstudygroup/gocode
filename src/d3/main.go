@@ -1,4 +1,7 @@
-//calculate the average of the random numbers from 0 to 100
+// sum odd number from 1 to 100
+// sum 100 random number from 0 to 100, print out the aveage
+// print out how many odd numbers
+
 package main
 
 import (
@@ -9,15 +12,17 @@ import (
 
 func main() {
 	sum := 0
-	numOdds := 0
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	for i := 0; i < 100; i++ {
-		x := r.Intn(100)
-		if x%2 == 1 {
-			sum += x
-			numOdds++
+
+	for x := 0; x <= 100; x++ {
+		s1 := rand.New(rand.NewSource(time.Now().UnixNano()))
+		s2 := s1.Intn(100)
+
+		if s2%2 == 1 {
+			sum += s2
 		}
+		fmt.Println(s2)
 	}
-	mean := sum / numOdds
-	fmt.Println(mean)
+	fmt.Println(sum)
+	fmt.Println(float64(mean))
+
 }
