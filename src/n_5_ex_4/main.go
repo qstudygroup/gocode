@@ -1,30 +1,32 @@
 package main
 
-func main(){
-	s := struct{
-		first string
-		friends map[string]int
+import "fmt"
+
+func main() {
+	s := struct {
+		first     string
+		friends   map[string]int
 		towtrucks []string
 	}{
 		first: "James",
 		friends: map[string]int{
 			"Moneypenny": 555,
-			"Q": 777,
-			"M": 888,
+			"Q":          777,
+			"M":          888,
 		},
-		towtruck []string{
-			"monstertruck",
+		towtrucks: []string{
+			"monster truck",
 			"suvvan",
 		},
 	}
-	fmt.Println(s)
+	fmt.Println(s.first)
 	fmt.Println(s.friends)
-	fmt.Println(s.towtruck)
+	fmt.Println(s.towtrucks)
 
-	for k, v := range s.friends{
-		fmt.Pritnln(k, v)
+	for k, v := range s.friends {
+		fmt.Println(k, v)
 	}
-	for i, val := range s.towtruck{
+	for i, val := range s.towtrucks {
 		fmt.Println(i, val)
 	}
 }
