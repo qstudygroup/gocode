@@ -1,3 +1,9 @@
+2019-05-11
+    8-10: Soccer
+    10-11: Eating and reading.
+    
+
+
 2019-03-31
     Start 8:30
     Stop 9:00 
@@ -77,6 +83,27 @@
     Stop 9:54
     Start 10:00
     Stop 10:10
-2019-04-16
+2019-04-14
     Start 9:30
     Stop 9:43
+2019-04-015
+Start 6:38
+Stop 6:58
+2019-04-20
+    Start 3:10
+    Stop 3:40
+2019-04-21
+    Start 9:30
+    Stop 9:50
+    Start 10:30
+    Stop 10:40
+2019-04-30
+    Start 4: 55
+    Stop 5:05
+    Start 5:30 
+    Stop 6:00
+2019-05-1
+    Start 5:20
+    Stop 5:40
+    Start 7:20
+    Stop 7:40
